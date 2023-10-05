@@ -32,10 +32,10 @@ public class Specifications {
                 .build();
     }
 
-    public static ResponseSpecification responseSpecificationUnique(int enterExpectedStatucCode){
+    public static ResponseSpecification responseSpecificationUnique(int enterExpectedStatusCode){
         return new ResponseSpecBuilder()
                 .expectResponseTime(lessThan(1000L))
-                .expectStatusCode(enterExpectedStatucCode)
+                .expectStatusCode(enterExpectedStatusCode)
                 .build();
     }
 
